@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "name": "student"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "peopleSoftId": {
+      "type": "string",
+      "required": true
+    },
+    "fistname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string",
+      "required": true
+    },
+    "courses": {
+      "collection": "course",
+      "via": "students",
+      "dominant": true
+    }
+  }
+}

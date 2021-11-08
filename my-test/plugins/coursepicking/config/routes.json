@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/",
+      "handler": "coursepicking.index",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
